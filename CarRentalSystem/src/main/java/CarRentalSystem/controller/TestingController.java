@@ -22,7 +22,7 @@ public class TestingController {
         return ResponseEntity.ok(savedPost);
     }
 
-    @GetMapping("/get")
+    @GetMapping("/get-table")
     public ResponseEntity<List<TestingTable>> getAllPosts() {
         List<TestingTable> posts = testingService.getAllPosts();
         return ResponseEntity.ok(posts);
