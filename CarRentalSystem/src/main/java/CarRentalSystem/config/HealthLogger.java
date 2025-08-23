@@ -57,7 +57,7 @@ public class HealthLogger {
         this.healthEndpoint = healthEndpoint;
     }
 
-    @Scheduled(fixedRate = 30 * 60 * 1000)
+    @Scheduled(fixedRate = 5000)
     public void logHealthStatus() {
         HealthComponent healthComponent = healthEndpoint.health();
         StringBuilder message = new StringBuilder();
